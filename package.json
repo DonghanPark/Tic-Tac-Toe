@@ -1,0 +1,22 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "틱택토 클론코딩 in SSAFY",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swkim12345/Tic-Tac-Toe.git"
+  },
+  "author": "sunghwki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swkim12345/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/swkim12345/Tic-Tac-Toe#readme",
+  "dependencies": {
+    "react": "^19.1.1"
+  }
+}
