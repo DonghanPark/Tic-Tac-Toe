@@ -7,7 +7,7 @@ npm run dev
 ```
 
 ## Where can I write
-
+`src/App.jsx`
 
 ## 브랜치 전략
 - git flow
