@@ -1,20 +1,13 @@
-import React, { useState } from "react";
-export default function Cell({ currentPlayer, index, onLock }) {
-  const [pressed, setPressed] = useState(false);
-  const [owner, setOwner] = useState(null);
+import React from "react";
 
-  function handleClick() {
-    if (pressed) return;
-
-    setPressed(true);
-    setOwner(currentPlayer);
-    onLock(currentPlayer);
-  }
-
-  const symbol = owner === 1 ? "X" : owner === 2 ? "O" : "";
-
+export default function Cell({ value, onClick, disabled }) {
+  const symbol = value === 1 ? "X" : value === 2 ? "O" : "";
   return (
-    <button onClick={handleClick} pressed={pressed} index={index}>
+    <button
+      onClick={onClick}
+      disabled={disabled || value !== null}
+      style={{ width: 60, height: 60, fontSize: 24 }}
+    >
       {symbol}
     </button>
   );
